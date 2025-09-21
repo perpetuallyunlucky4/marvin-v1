@@ -32,7 +32,7 @@ class weatherPlugin(Plugin):
     def can_handle(self, message: str) -> bool:
         return "[WEATHER]" in message and "[/WEATHER]" in message
     
-    def handle(self, message, apiKey="s2yNpPXSVKmiqra4dRrywDmVZSzl3xnJ", savedDataPath="/home/pi/marvin/plugins/plugin_info/weather_saved.json") -> list[str]:
+    def handle(self, message, apiKey="apikey", savedDataPath="/home/pi/marvin/plugins/plugin_info/weather_saved.json") -> list[str]:
         pattern = r"\[WEATHER\](.*?)\[/WEATHER\]"
         calc_blocks = re.findall(pattern, message, re.DOTALL)
 
