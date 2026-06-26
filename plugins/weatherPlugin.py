@@ -9,7 +9,7 @@ class weatherPlugin(Plugin):
     def coords_from_loc(self, loc):
         geocodeurl = "https://nominatim.openstreetmap.org/search"
         headers = {
-            "User-Agent": "M.A.R.V.I.N. v1.0 (mathloverqubed@gmail.com)"
+            "User-Agent": "M.A.R.V.I.N. v1.0 (goldtitaniumalloy72@gmail.com)"
         }
         params = {
             "q": loc,
